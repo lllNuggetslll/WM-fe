@@ -34,15 +34,15 @@ export class App extends Component {
     };
   }
 
-  locateMe() {
-    const { dispatch } = this.props;
+  locateMe = () => {
+    const { locate } = this.props;
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
-        dispatch(locate(position.coords));
+        locate(position.coords);
       });
     }
-  }
+  };
 
   render() {
     const { isLocating, location, regions, error } = this.props;
@@ -105,8 +105,6 @@ export class App extends Component {
   }
 }
 
-const mapStateToProps = state => state.location;
-
 App.propTypes = {
   isLocating: PropTypes.bool.isRequired,
   location: PropTypes.object,
@@ -122,4 +120,9 @@ App.defaultProps = {
   error: {}
 };
 
-export default connect(mapStateToProps)(App);
+const mapStateToProps = state => state.location;
+
+export default connect(
+  mapStateToProps,
+  { locate }
+)(App);
