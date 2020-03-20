@@ -8,7 +8,7 @@ const CardInfoWrapper = styled.div`
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-  height: 64px;
+  height: 75px;
   justify-content: space-between;
 
   @media only screen and (max-width: 750px) {
@@ -19,7 +19,15 @@ const CardInfoWrapper = styled.div`
 const Name = styled.div`
   font-weight: bold;
   opacity: 0.6;
-  white-space: nowrap;
+
+
+  @media only screen and (max-width: 750px) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 279px;
+  }
+}
 `;
 
 const CardDetails = ({ listing }) => {

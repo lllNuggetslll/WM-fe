@@ -20,6 +20,10 @@ export const ListingGroups = styled.div`
   }
 `;
 
+export const Label = styled.div`
+  color: #7e7979;
+`;
+
 const regionTypes = ["dispensary", "delivery", "doctor"];
 const regionLabels = {
   delivery: {
@@ -40,10 +44,10 @@ const Content = ({ error, regions, fetchListing }) => {
   const getLabel = (listings, { label, icon }) => {
     if (get(listings, "listings").length) {
       return (
-        <div style={{ color: "#7E7979" }} key={label}>
+        <Label key={label}>
           <i className={icon} />
           <strong> {label} </strong>
-        </div>
+        </Label>
       );
     }
     return <div />;

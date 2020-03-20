@@ -12,6 +12,7 @@ import { shutterListingData } from "./../../actions/actions";
 import { deleteParams } from "./../../utils/urlUtils";
 
 const BusinessDetailsContainer = styled.div`
+  margin-top: 15px;
   min-width: 450px;
   max-width: 700px;
   display: flex;

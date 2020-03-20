@@ -3,12 +3,13 @@ import { object } from "prop-types";
 import styled from "styled-components";
 
 const Table = styled.table`
+  margin-top: 15px;
+
   th {
     text-align: initial;
-    min-width: 100px;
+    min-width: 80px;
   }
   @media only screen and (max-width: 750px) {
-    margin-top: 20px;
   }
 `;
 

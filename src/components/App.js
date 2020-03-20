@@ -29,14 +29,9 @@ export const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-width: 520px;
   margin-bottom: 20px;
   text-align: center;
-`;
-
-export const Footer = styled.div`
-  height: 50px;
-  background: #00cdbd;
-  width: 100%;
 `;
 
 export class App extends Component {
@@ -92,7 +87,6 @@ export class App extends Component {
         </AppHeader>
         <HeroSection {...{ location, isLocating }} locateMe={this.locateMe} />
         <AppContent {...{ regions, error, fetchListing }} />
-        <Footer />
       </AppWrapper>
     );
   }
