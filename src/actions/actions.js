@@ -75,6 +75,4 @@ export const fetchListing = wmid => async dispatch => {
   }
 };
 
-export const shutterListingData = () => dispatch => {
-  dispatch({ type: types.SHUTTER_LISTING_DATA });
-};
+export const shutterListingData = () => ({ type: types.SHUTTER_LISTING_DATA });

@@ -1,0 +1,103 @@
+{
+  "data": {
+    "listing": {
+      "id": 56913,
+      "name": "High Season - DTLA",
+      "slug": "arts-district-cannabis-center",
+      "state": "California",
+      "best_of_weedmaps": false,
+      "city": "Los Angeles",
+      "type": "dispensary",
+      "wmid": 335715637,
+      "latitude": 34.02589,
+      "longitude": -118.23261,
+      "web_url": "https://weedmaps.com/dispensaries/arts-district-cannabis-center",
+      "package_level": "listing_plus",
+      "feature_order": 1,
+      "ranking": 4.749410754730924,
+      "rating": 4.79398826979472,
+      "reviews_count": 1364,
+      "avatar_image": {
+        "small_url": "https://images.weedmaps.com/dispensaries/000/056/913/avatar/square_fill/1563824730-HighSeason.jpg",
+        "original_url": "https://images.weedmaps.com/dispensaries/000/056/913/avatar/original/1563824730-HighSeason.jpg"
+      },
+      "license_type": "hybrid",
+      "address": "2222 East Olympic Blvd.",
+      "distance": null,
+      "zip_code": "90021",
+      "timezone": "America/Los_Angeles",
+      "intro_body": "\u003cp\u003e18-20 YEARS OLD MUST HAVE VALID STATE ID OR PASSPORT AND A MEDICAL REC. \u003c/p\u003e\u003cp\u003e21 AND OVER MUST HAVE VALID STATE ID OR PASSPORT \u003c/p\u003e\u003cp\u003eMUST BRING MEDICAL REC EVERY TIME IF PLANNING ON PURCHASING MORE THAN 1 OZ OF FLOWER!\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003ePRICES LISTED ON OUR WEEDMAPS ARE INCLUDING 20% CITY \u0026 STATE TAX!!\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eONLINE ORDERING AVAILABLE AT shophighseason . com!!\u003c/p\u003e\u003cp\u003eSORRY WE DO NOT DELIVER!\u003c/p\u003e",
+      "static_map_url": "https://staticmap.weedmaps.com/static_map/13/34.02589/-118.23261/402/147/map.png",
+      "open_now": false,
+      "closes_in": null,
+      "todays_hours_str": "10:00am - 10:00pm",
+      "min_age": null,
+      "menu_items_count": 158,
+      "verified_menu_items_count": 104,
+      "endorsement_badge_count": 102,
+      "is_published": true,
+      "online_ordering": {
+        "enabled_for_pickup": true,
+        "enabled_for_delivery": false,
+        "purchase_min": { "cents": 0, "currency": "USD", "amount": 0.0 },
+        "fee": { "cents": 0, "currency": "USD", "amount": 0.0 },
+        "eta_min": 30,
+        "eta_max": 60
+      },
+      "retailer_services": ["storefront"],
+      "description": "\u003cp\u003e\u003cstrong\u003eHigh Season DTLA – Medical and Recreational Dispensary\u003c/strong\u003e\u003c/p\u003e\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\u003cp\u003eHigh Season DTLA welcomes patients 18 and consumers 21 to explore the dispensary’s extensive menu boasting some of the best name brands in the industry. We are a Medical and Recreational Licensed dispensary located in the Heart of Los Angeles.\u003c/p\u003e\u003cp\u003eHigh Season curates a Menu that caters to all levels of users, from beginner user, just exploring the eye-opening world of cannabis and cannabis products, to the connoisseurs of the industry searching for the best of the best and most exotic strains of flower, concentrates and cannabis products.\u003c/p\u003e\u003cp\u003eWhile visiting the dispensary, make sure to check out the up and coming strains being grown in our state of the art facility, boasting 5 viewing windows so you may see your favorite cannabis strains being carefully hand crafted to perfection.\u003c/p\u003e\u003cp\u003eWe're real growers and real cannabis lovers who are committed to staying on the cutting edge of cultivation when it comes to producing carefully bred, quality flower. By combining our 15 years of experience with new learnings, research and advancements, we’re able to ensure we always meet the demands of those who choose quality over hype. \u003c/p\u003e\u003cp\u003eIndoor grown flower is truly the most premium flower. By controlling the environment and everything that goes into caring for our plants all day, every day, we can guarantee the purest product experience. We know that patients, cannabis connoisseurs, and new adult users will appreciate the quality and freshness of our flower, pre-rolls and concentrates and strive to always bring something new to the table with enticing seasonal offerings.\u003c/p\u003e\u003cp\u003eBecause we’re there every step of the way, from our specially managed grow facilities to our welcoming dispensaries, we aim to create a more meaningful and inclusive quality cannabis experience for all.\u003c/p\u003e\u003cp\u003e\u003cstrong\u003eDeals and Discounts\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eHigh Season DTLA offers a wide range of Deals and Discounts for the discerning traveler and/or local consumer.\u003c/p\u003e\u003cp\u003e-MONDAY - FRIDAY FROM 4-7PM WE HAVE HAPPY HOUR: IF YOU SPEND LESS THAN $50 RECEIVE 10% OFF YOUR ENTIRE PURCHASE. RECEIVE $5 OFF YOUR PURCHASE WHEN YOU SPEND $50 OR MORE! \u003c/p\u003e\u003cp\u003e-Daily BOGO Offers\u003c/p\u003e\u003cp\u003e-FTP and Referral Discounts\u003c/p\u003e\u003cp\u003e-Veteran's and Senior 55 Discounts (must show valid ID)\u003c/p\u003e\u003cp\u003eCLICK ON \"Deals\" TO SEE SOME OF TODAY'S SPECIALS!!!\u003c/p\u003e\u003cp\u003e\u003cstrong\u003eLocation, Location, Location\u003c/strong\u003e\u003c/p\u003e\u003cp\u003eHigh Season DTLA is located on East Olympic Boulevard directly off the connecting Freeways of the 10, 5 and 60 in Downtown Los Angeles, Surrounded by the Historic Arts District of Los Angeles, High Season DTLA encompasses the Arts District heritage showcasing Local LA Artists paintings and Beautifully crafted Murals. We welcome the LA community with our friendly and highly knowledgeable staff and offer plenty of parking in front of the dispensary.\u003c/p\u003e",
+      "first_time_announcement": "\u003cp\u003eF.T.P./referral deal: Spend less than $50 and receive 10% off entire purchase. Spend $50 or more and receive $5 off entire purchase.\u003c/p\u003e \u003cp\u003e \u003c/p\u003e \u003cp\u003eLEAVE A REVIEW AND GET A 25 CENT PRE-ROLL! *Only valid with purchase and price is before tax.\u003c/p\u003e",
+      "announcement": "",
+      "country": "US",
+      "phone_number": "909-354-8004",
+      "email": "dtla@shophighseason.com",
+      "website": "https://shophighseason.com/",
+      "has_handicap_access": true,
+      "has_photos": true,
+      "has_videos": false,
+      "accepts_credit_cards": false,
+      "has_testing": false,
+      "is_recreational": false,
+      "has_atm": true,
+      "has_security_guard": true,
+      "is_verified_seller": true,
+      "has_endorsement_badges": true,
+      "has_age_gate": false,
+      "license_number": "C10-0000486-LIC",
+      "licenses": [
+        { "type": "Adult-Use Retail", "number": "C10-0000486-LIC" },
+        { "type": "Medical Retail", "number": "C10-0000486-LIC" }
+      ],
+      "business_hours": {
+        "sunday": { "open": "10:00am", "close": "10:00pm" },
+        "monday": { "open": "10:00am", "close": "10:00pm" },
+        "tuesday": { "open": "10:00am", "close": "10:00pm" },
+        "wednesday": { "open": "10:00am", "close": "10:00pm" },
+        "thursday": { "open": "10:00am", "close": "10:00pm" },
+        "friday": { "open": "10:00am", "close": "10:00pm" },
+        "saturday": { "open": "10:00am", "close": "10:00pm" }
+      },
+      "social": {
+        "facebook_id": "",
+        "instagram_id": "high_seasondtla",
+        "twitter_id": "",
+        "youtube_ids": []
+      },
+      "region": {
+        "id": 117,
+        "name": "Downtown LA",
+        "slug": "downtown-la",
+        "region_path": "united-states/california/downtown-la"
+      },
+      "member_since": "2018",
+      "price_aggregations": {
+        "unit": { "units": "1", "min": 2.41, "max": 490.0 },
+        "gram": [
+          { "units": "1", "min": 11.0, "max": 120.45 },
+          { "units": "1/2", "min": 27.1, "max": 54.2 }
+        ],
+        "ounce": [{ "units": "1/8", "min": 35.0, "max": 81.91 }]
+      }
+    }
+  }
+}
