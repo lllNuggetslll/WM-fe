@@ -1,37 +1,7 @@
+import React from "react";
+import MapPin from "./../../icons/map-pin";
+import Locate from "./../../icons/locate";
 import styled from "styled-components";
-
-export const AppHeader = styled.div`
-  height: 70px;
-  display: flex;
-  padding: 0 20px;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-  color: #fff;
-
-  img {
-    width: 110px;
-    height: 25px;
-  }
-`;
-
-export const AppWrapper = styled.div`
-  margin-bottom: 20px;
-  text-align: center;
-`;
-
-export const AppContent = styled.div`
-  width: 90%;
-  max-width: 1200px;
-  margin: 10px auto;
-`;
-
-export const ListingGroups = styled.div`
-  margin-top: 30px;
-  h2 {
-    text-align: left;
-  }
-`;
 
 export const HeroSection = styled.div`
   background-color: white;
@@ -97,3 +67,30 @@ export const LocateButton = styled.a`
     margin-right: 5px;
   }
 `;
+
+const Hero = ({ location, isLocating, locateMe }) => {
+  return (
+    <HeroSection>
+      <ContentContainer>
+        <LocationSection>
+          <h2>
+            <MapPin fill={"#7e7979"} width={"60px"} height={"40px"} />
+            <span> {location ? location.name : ""} </span>
+            <span> {isLocating && !location ? "...locating" : ""} </span>
+          </h2>
+          <LocateButton onClick={locateMe}>
+            <Locate fill={"#7e7979"} />
+            <span> Locate Me </span>
+          </LocateButton>
+        </LocationSection>
+        <TextContent>
+          Lorem Ipsum dolor sit amet, consectetur adispiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aligqua. Ut enim
+          ad minim veniam, quis.
+        </TextContent>
+      </ContentContainer>
+    </HeroSection>
+  );
+};
+
+export default Hero;

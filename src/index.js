@@ -1,9 +1,10 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import { createGlobalStyle } from 'styled-components';
-import App from './components/App';
-import configureStore from './store/configureStore';
+import React from "react";
+import { render } from "react-dom";
+import { Provider } from "react-redux";
+import { createGlobalStyle } from "styled-components";
+import App from "./components/App";
+import configureStore from "./store/configureStore";
+import { BrowserRouter, Route } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -14,15 +15,17 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const cacheStore = window.localStorage.getItem('store') || {};
+const cacheStore = window.localStorage.getItem("store") || {};
 const store = configureStore(cacheStore);
 
 render(
   <Provider store={store}>
     <React.Fragment>
       <GlobalStyle />
-      <App />
+      <BrowserRouter>
+        <Route path="/" component={App} />
+      </BrowserRouter>
     </React.Fragment>
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById("root")
 );

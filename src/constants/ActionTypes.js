@@ -1,4 +1,7 @@
-export const REQUEST = 'REQUESTING';
-export const RECEIVE = 'RECEIVING';
-export const LOCATE = 'LOCATING';
-export const ERROR = 'ERROR';
+export const REQUEST = "REQUESTING";
+export const RECEIVE = "RECEIVING";
+export const LOCATE = "LOCATING";
+export const ERROR = "ERROR";
+export const REQUEST_LISTING_DATA = "REQUEST_LISTING_DATA";
+export const RECEIVE_LISTING_DATA = "RECEIVE_LISTING_DATA";
+export const SHUTTER_LISTING_DATA = "SHUTTER_LISTING_DATA";
