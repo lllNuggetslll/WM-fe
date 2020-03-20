@@ -17,22 +17,26 @@ const Table = styled.table`
 const BusinessHours = ({ hours }) => {
   return (
     <Table>
-      <tr>
-        <th>Day</th>
-        <th>Opens</th>
-        <th>Closes</th>
-      </tr>
-      {Object.keys(hours).map(day => {
-        const capitalizedDay = day.charAt(0).toUpperCase() + day.substring(1);
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Opens</th>
+          <th>Closes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {Object.keys(hours).map(day => {
+          const capitalizedDay = day.charAt(0).toUpperCase() + day.substring(1);
 
-        return (
-          <tr key={capitalizedDay}>
-            <td>{capitalizedDay}</td>
-            <td>{hours[day].open}</td>
-            <td>{hours[day].close}</td>
-          </tr>
-        );
-      })}
+          return (
+            <tr key={capitalizedDay}>
+              <td>{capitalizedDay}</td>
+              <td>{hours[day].open}</td>
+              <td>{hours[day].close}</td>
+            </tr>
+          );
+        })}
+      </tbody>
     </Table>
   );
 };

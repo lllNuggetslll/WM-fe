@@ -22,6 +22,5 @@ exports[`<App/> should render App 1`] = `
     fetchListing={[Function]}
     regions={Object {}}
   />
-  <styled.div />
 </styled.div>
 `;

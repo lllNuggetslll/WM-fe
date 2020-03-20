@@ -1,5 +1,5 @@
 import React from "react";
-import { shape, string, number } from "prop-types";
+import { shape, string } from "prop-types";
 import styled from "styled-components";
 
 const AddressContainer = styled.div`
@@ -26,8 +26,8 @@ BusinessAddress.propTypes = {
   listing: shape({
     city: string.isRequired,
     state: string.isRequired,
-    zip_code: number.isRequired,
-    phone_number: number.isRequired
+    zip_code: string.isRequired,
+    phone_number: string.isRequired
   }).isRequired
 };
 

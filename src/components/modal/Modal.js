@@ -57,7 +57,7 @@ const DisplayModal = ({
 
   return (
     <Modal
-      isOpen={isLoadingListing || listing}
+      isOpen={!!(isLoadingListing || listing)}
       onRequestClose={onCloseModal}
       style={customStyles}
     >
@@ -77,12 +77,13 @@ const DisplayModal = ({
 };
 
 DisplayModal.defaultProps = {
-  deleteParams
+  deleteParams,
+  listing: null
 };
 
 DisplayModal.propTypes = {
   isLoadingListing: bool.isRequired,
-  listing: object.isRequired,
+  listing: object,
   history: object.isRequired,
   shutterListingData: func.isRequired,
   deleteParams: func.isRequired

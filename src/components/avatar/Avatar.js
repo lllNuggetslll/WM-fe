@@ -1,5 +1,5 @@
 import React from "react";
-import { string } from "prop-types";
+import { string, oneOfType, number } from "prop-types";
 import styled from "styled-components";
 import { mobileBreakPoint } from "./../../constants/breakPoints";
 
@@ -29,8 +29,8 @@ const Avatar = ({ img, width, height }) => (
 
 Avatar.propTypes = {
   img: string,
-  width: string,
-  height: string
+  width: oneOfType([string, number]),
+  height: oneOfType([string, number])
 };
 
 Avatar.defaultProps = {

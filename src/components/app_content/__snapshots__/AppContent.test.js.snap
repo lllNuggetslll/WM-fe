@@ -10,13 +10,8 @@ exports[`AppContent should render 1`] = `
     key="dispensary"
   >
     <h2>
-      <div
+      <styled.div
         key="Dispensary Storefronts"
-        style={
-          Object {
-            "color": "#7E7979",
-          }
-        }
       >
         <i
           className="fas fa-cannabis"
@@ -26,7 +21,7 @@ exports[`AppContent should render 1`] = `
           Dispensary Storefronts
            
         </strong>
-      </div>
+      </styled.div>
     </h2>
     <withRouter(ListingCards)
       fetchListing={[Function]}
@@ -41,13 +36,8 @@ exports[`AppContent should render 1`] = `
     key="delivery"
   >
     <h2>
-      <div
+      <styled.div
         key="Delivery Services"
-        style={
-          Object {
-            "color": "#7E7979",
-          }
-        }
       >
         <i
           className="fas fa-car"
@@ -57,7 +47,7 @@ exports[`AppContent should render 1`] = `
           Delivery Services
            
         </strong>
-      </div>
+      </styled.div>
     </h2>
     <withRouter(ListingCards)
       fetchListing={[Function]}
@@ -72,13 +62,8 @@ exports[`AppContent should render 1`] = `
     key="doctor"
   >
     <h2>
-      <div
+      <styled.div
         key="Doctors"
-        style={
-          Object {
-            "color": "#7E7979",
-          }
-        }
       >
         <i
           className="fas fa-stethoscope"
@@ -88,7 +73,7 @@ exports[`AppContent should render 1`] = `
           Doctors
            
         </strong>
-      </div>
+      </styled.div>
     </h2>
     <withRouter(ListingCards)
       fetchListing={[Function]}

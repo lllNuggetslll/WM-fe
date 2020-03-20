@@ -26,30 +26,34 @@ exports[`Modal components BusinessAddress should render 1`] = `
 
 exports[`Modal components BusinessHours should render 1`] = `
 <styled.table>
-  <tr>
-    <th>
-      Day
-    </th>
-    <th>
-      Opens
-    </th>
-    <th>
-      Closes
-    </th>
-  </tr>
-  <tr
-    key="Sat"
-  >
-    <td>
-      Sat
-    </td>
-    <td>
-       6am
-    </td>
-    <td>
-      8pm
-    </td>
-  </tr>
+  <thead>
+    <tr>
+      <th>
+        Day
+      </th>
+      <th>
+        Opens
+      </th>
+      <th>
+        Closes
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      key="Sat"
+    >
+      <td>
+        Sat
+      </td>
+      <td>
+         6am
+      </td>
+      <td>
+        8pm
+      </td>
+    </tr>
+  </tbody>
 </styled.table>
 `;
 

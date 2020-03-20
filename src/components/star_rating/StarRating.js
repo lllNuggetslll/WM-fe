@@ -9,7 +9,7 @@ const StarContainer = styled.span`
   opacity: 0.4;
 `;
 
-const StarRating = ({ rating }) => {
+const StarRating = ({ rating, id }) => {
   const ratingText = rating.toPrecision(2);
   const stars = decideStars(rating);
 
@@ -18,7 +18,7 @@ const StarRating = ({ rating }) => {
       {stars.map((rating, index) => {
         const { color, icon } = starMap[rating];
 
-        return <i key={index + rating} style={{ color }} className={icon} />;
+        return <i key={index + id} style={{ color }} className={icon} />;
       })}
       <StarContainer>{ratingText}</StarContainer>
     </div>
@@ -26,7 +26,8 @@ const StarRating = ({ rating }) => {
 };
 
 StarRating.propTypes = {
-  rating: number.isRequired
+  rating: number.isRequired,
+  id: number.isRequired
 };
 
 export default StarRating;
