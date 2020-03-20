@@ -43,9 +43,7 @@ const DisplayModal = ({
   return (
     <Modal
       isOpen={isLoadingListing || listing}
-      onAfterOpen={() => {}}
       onRequestClose={onCloseModal}
-      contentLabel="Example Modal"
       style={{ maxWidth: 700 }}
     >
       <Loader isLoaded={!isLoadingListing} />
