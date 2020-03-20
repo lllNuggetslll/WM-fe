@@ -7,7 +7,7 @@ import {
   SHUTTER_LISTING_DATA
 } from "../constants/ActionTypes";
 
-const initialState = {
+export const initialState = {
   isLocating: false,
   location: null,
   regions: null,
