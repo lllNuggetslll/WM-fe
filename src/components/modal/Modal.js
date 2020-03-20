@@ -22,6 +22,19 @@ const BusinessDetailsContainer = styled.div`
   }
 `;
 
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    maxWidth: 800,
+    minWidth: 450
+  }
+};
+
 const DisplayModal = ({
   isLoadingListing,
   listing,
@@ -44,7 +57,7 @@ const DisplayModal = ({
     <Modal
       isOpen={isLoadingListing || listing}
       onRequestClose={onCloseModal}
-      style={{ maxWidth: 700 }}
+      style={customStyles}
     >
       <Loader isLoaded={!isLoadingListing} />
       {!isLoadingListing && listing && (

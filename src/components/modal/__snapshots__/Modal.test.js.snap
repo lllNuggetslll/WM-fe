@@ -16,7 +16,16 @@ exports[`Modal should not render 1`] = `
   shouldReturnFocusAfterClose={true}
   style={
     Object {
-      "maxWidth": 700,
+      "content": Object {
+        "bottom": "auto",
+        "left": "50%",
+        "marginRight": "-50%",
+        "maxWidth": 800,
+        "minWidth": 450,
+        "right": "auto",
+        "top": "50%",
+        "transform": "translate(-50%, -50%)",
+      },
     }
   }
 >
@@ -42,7 +51,16 @@ exports[`Modal should render 1`] = `
   shouldReturnFocusAfterClose={true}
   style={
     Object {
-      "maxWidth": 700,
+      "content": Object {
+        "bottom": "auto",
+        "left": "50%",
+        "marginRight": "-50%",
+        "maxWidth": 800,
+        "minWidth": 450,
+        "right": "auto",
+        "top": "50%",
+        "transform": "translate(-50%, -50%)",
+      },
     }
   }
 >

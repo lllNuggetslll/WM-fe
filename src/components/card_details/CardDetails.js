@@ -16,6 +16,12 @@ const CardInfoWrapper = styled.div`
   }
 `;
 
+const Name = styled.div`
+  font-weight: bold;
+  opacity: 0.6;
+  white-space: nowrap;
+`;
+
 const CardDetails = ({ listing }) => {
   return (
     <CardInfoWrapper>
@@ -24,7 +30,7 @@ const CardDetails = ({ listing }) => {
         {Math.round(listing.distance)}
         mi
       </div>
-      <div style={{ fontWeight: "bold", opacity: 0.6 }}>{listing.name}</div>
+      <Name>{listing.name}</Name>
       <StarRating rating={listing.rating} />
     </CardInfoWrapper>
   );
