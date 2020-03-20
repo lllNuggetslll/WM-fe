@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+import { object, bool, func } from "prop-types";
 import { connect } from "react-redux";
 import { locate, fetchListing } from "../actions/actions";
 import logo from "../assets/logo.png";
@@ -40,20 +40,14 @@ export const Footer = styled.div`
 `;
 
 export class App extends Component {
-  constructor(props) {
-    super();
-    this.state = {
-      loadingTimer: 0
-    };
-  }
-
   componentDidMount() {
     const {
       locate,
       fetchListing,
       history: {
         location: { search }
-      }
+      },
+      getParams
     } = this.props;
     const loc = getParams("location", search);
     const listing = getParams("listing", search);
@@ -70,7 +64,7 @@ export class App extends Component {
   }
 
   locateMe = () => {
-    const { locate } = this.props;
+    const { locate, setParams } = this.props;
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
@@ -104,23 +98,30 @@ export class App extends Component {
   }
 }
 
-App.propTypes = {
-  isLocating: PropTypes.bool.isRequired,
-  location: PropTypes.object,
-  regions: PropTypes.object,
-  error: PropTypes.object
-};
-
 App.defaultProps = {
+  // for testing, so i can pass in mock funcs
+  getParams,
+  setParams,
   isLocating: false,
   location: {},
   regions: {},
   error: {}
 };
 
-const mapStateToProps = state => state.location;
+App.propTypes = {
+  isLocating: bool.isRequired,
+  location: object,
+  regions: object,
+  error: object,
+  locate: func.isRequired,
+  fetchListing: func.isRequired,
+  history: object.isRequired,
+  getParams: func.isRequired,
+  setParams: func.isRequired
+};
 
-export default connect(
-  mapStateToProps,
-  { locate, fetchListing }
-)(App);
+const mapStateToProps = state => state.location;
+// For testing without redux
+export { App as TestApp };
+
+export default connect(mapStateToProps, { locate, fetchListing })(App);

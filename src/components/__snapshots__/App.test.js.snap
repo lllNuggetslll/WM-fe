@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> should render App 1`] = `
+<styled.div>
+  <Connect(withRouter(DisplayModal)) />
+  <Loader
+    isLoaded={true}
+  />
+  <styled.div>
+    <img
+      alt="weedmaps logo"
+      src="logo.png"
+    />
+  </styled.div>
+  <Hero
+    isLocating={false}
+    locateMe={[Function]}
+    location={Object {}}
+  />
+  <Content
+    error={Object {}}
+    fetchListing={[Function]}
+    regions={Object {}}
+  />
+  <styled.div />
+</styled.div>
+`;
