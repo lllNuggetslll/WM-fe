@@ -1,6 +1,7 @@
 import React from "react";
 import { string } from "prop-types";
 import styled from "styled-components";
+import { mobileBreakPoint } from "./../../constants/breakPoints";
 
 const ImgWrapper = styled.div`
   margin-top: 4px;
@@ -11,7 +12,7 @@ const ImgWrapper = styled.div`
     object-fit: cover;
   }
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: ${mobileBreakPoint}) {
     margin: 0;
     img {
       width: 100px;

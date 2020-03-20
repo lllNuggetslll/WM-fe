@@ -4,6 +4,7 @@ import Avatar from "../avatar";
 import styled from "styled-components";
 import get from "lodash.get";
 import CardDetails from "./../card_details";
+import { mobileBreakPoint } from "./../../constants/breakPoints";
 
 const CardWrapper = styled.div`
   background: white;
@@ -23,7 +24,7 @@ const CardWrapper = styled.div`
     box-shadow: 1px 1px 5px 1px rgba(120, 120, 120, 1);
   }
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: ${mobileBreakPoint}) {
     width: 380px;
     flex-direction: row-reverse;
     justify-content: space-between;

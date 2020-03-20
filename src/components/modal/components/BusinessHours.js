@@ -1,6 +1,7 @@
 import React from "react";
 import { object } from "prop-types";
 import styled from "styled-components";
+import { mobileBreakPoint } from "./../../../constants/breakPoints";
 
 const Table = styled.table`
   margin-top: 15px;
@@ -9,7 +10,7 @@ const Table = styled.table`
     text-align: initial;
     min-width: 80px;
   }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: ${mobileBreakPoint}) {
   }
 `;
 

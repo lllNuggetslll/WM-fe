@@ -4,6 +4,7 @@ import styled from "styled-components";
 import get from "lodash.get";
 import Avatar from "./../../avatar";
 import CardDetails from "./../../card_details";
+import { mobileBreakPoint } from "./../../../constants/breakPoints";
 
 const ModalHeaderWrapper = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ const CardDetailsWrapper = styled.div`
   font-size: 20px;
   line-height: 40px;
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: ${mobileBreakPoint}) {
     line-height: initial;
     margin-left: 20px;
   }

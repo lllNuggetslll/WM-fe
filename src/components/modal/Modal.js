@@ -7,6 +7,7 @@ import styled from "styled-components";
 import Loader from "./../loader";
 import Map from "./../map";
 import { ModalHeader, BusinessHours, BusinessAddress } from "./components";
+import { mobileBreakPoint } from "./../../constants/breakPoints";
 
 import { shutterListingData } from "./../../actions/actions";
 import { deleteParams } from "./../../utils/urlUtils";
@@ -18,7 +19,7 @@ const BusinessDetailsContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: ${mobileBreakPoint}) {
     flex-direction: column;
   }
 `;

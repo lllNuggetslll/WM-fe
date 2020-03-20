@@ -3,13 +3,14 @@ import { object, func } from "prop-types";
 import ListingCards from "./../listing_cards";
 import styled from "styled-components";
 import get from "lodash.get";
+import { backgroundGray, labelGray } from "./../../constants/colors";
 
 export const AppContent = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f2f5f5;
+  background: ${backgroundGray};
   padding-bottom: 20px;
 `;
 
@@ -21,7 +22,7 @@ export const ListingGroups = styled.div`
 `;
 
 export const Label = styled.div`
-  color: #7e7979;
+  color: ${labelGray};
 `;
 
 const regionTypes = ["dispensary", "delivery", "doctor"];
