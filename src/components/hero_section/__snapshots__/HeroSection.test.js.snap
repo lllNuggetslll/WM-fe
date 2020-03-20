@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroSection should render 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <h2>
+        <MapPin
+          fill="#7e7979"
+          height="40px"
+          width="60px"
+        />
+        <span>
+           
+           
+        </span>
+        <span>
+           
+           
+        </span>
+      </h2>
+      <styled.a
+        data-testid="locateButton"
+        onClick={[MockFunction]}
+      >
+        <Locate
+          fill="#7e7979"
+          height="20px"
+          width="20px"
+        />
+        <span>
+           Locate Me 
+        </span>
+      </styled.a>
+    </styled.div>
+    <styled.div>
+      Lorem Ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aligqua. Ut enim ad minim veniam, quis.
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;

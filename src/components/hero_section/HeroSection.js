@@ -1,4 +1,5 @@
 import React from "react";
+import { object, bool, func } from "prop-types";
 import MapPin from "./../../icons/map-pin";
 import Locate from "./../../icons/locate";
 import styled from "styled-components";
@@ -78,7 +79,7 @@ const Hero = ({ location, isLocating, locateMe }) => {
             <span> {location ? location.name : ""} </span>
             <span> {isLocating && !location ? "...locating" : ""} </span>
           </h2>
-          <LocateButton onClick={locateMe}>
+          <LocateButton data-testid="locateButton" onClick={locateMe}>
             <Locate fill={"#7e7979"} />
             <span> Locate Me </span>
           </LocateButton>
@@ -91,6 +92,16 @@ const Hero = ({ location, isLocating, locateMe }) => {
       </ContentContainer>
     </HeroSection>
   );
+};
+
+Hero.defaultProps = {
+  location: {}
+};
+
+Hero.propTypes = {
+  location: object,
+  isLocating: bool.isRequired,
+  locateMe: func.isRequired
 };
 
 export default Hero;

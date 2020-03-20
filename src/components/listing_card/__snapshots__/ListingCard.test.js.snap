@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListingCard should render 1`] = `
+<styled.div
+  data-testid="CardWrapper"
+  onClick={[MockFunction]}
+>
+  <Avatar
+    height="70px"
+    img="undefined"
+    width="70px"
+  />
+  <CardDetails
+    listing={
+      Object {
+        "city": "city",
+        "distance": 1,
+        "name": "name",
+        "rating": 1,
+      }
+    }
+  />
+</styled.div>
+`;

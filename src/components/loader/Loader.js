@@ -1,4 +1,5 @@
 import React from "react";
+import { bool } from "prop-types";
 import ReactLoader from "react-loader";
 
 const Loader = ({ isLoaded }) => {
@@ -24,6 +25,10 @@ const Loader = ({ isLoaded }) => {
       loadedClassName="loadedContent"
     />
   );
+};
+
+Loader.propTypes = {
+  isLoaded: bool.isRequired
 };
 
 export default Loader;

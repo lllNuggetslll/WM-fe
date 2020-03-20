@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal components BusinessAddress should render 1`] = `
+<styled.div>
+  <div>
+    address
+  </div>
+  <div>
+    <span>
+      city
+      , 
+    </span>
+    <span>
+      state
+      , 
+    </span>
+    <span>
+      1
+    </span>
+  </div>
+  <div>
+    1
+  </div>
+</styled.div>
+`;
+
+exports[`Modal components BusinessHours should render 1`] = `
+<styled.table>
+  <tr>
+    <th>
+      Day
+    </th>
+    <th>
+      Opens
+    </th>
+    <th>
+      Closes
+    </th>
+  </tr>
+  <tr
+    key="Sat"
+  >
+    <td>
+      Sat
+    </td>
+    <td>
+       6am
+    </td>
+    <td>
+      8pm
+    </td>
+  </tr>
+</styled.table>
+`;
+
+exports[`Modal components ModalHeader should render 1`] = `
+<styled.div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <Avatar
+      height={100}
+      img="undefined"
+      width={100}
+    />
+    <styled.div>
+      <styled.div>
+        <CardDetails
+          listing={
+            Object {
+              "address": "address",
+              "city": "city",
+              "phone_number": 1,
+              "state": "state",
+              "zip_code": 1,
+            }
+          }
+        />
+      </styled.div>
+    </styled.div>
+  </div>
+  <styled.div>
+    <i
+      className="fas fa-times"
+      data-testid="xIcon"
+      onClick={[Function]}
+    />
+  </styled.div>
+</styled.div>
+`;

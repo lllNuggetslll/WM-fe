@@ -1,4 +1,5 @@
 import React from "react";
+import { object } from "prop-types";
 import styled from "styled-components";
 
 const Table = styled.table`
@@ -23,7 +24,7 @@ const BusinessHours = ({ hours }) => {
         const capitalizedDay = day.charAt(0).toUpperCase() + day.substring(1);
 
         return (
-          <tr>
+          <tr key={capitalizedDay}>
             <td>{capitalizedDay}</td>
             <td>{hours[day].open}</td>
             <td>{hours[day].close}</td>
@@ -32,6 +33,10 @@ const BusinessHours = ({ hours }) => {
       })}
     </Table>
   );
+};
+
+BusinessHours.propTypes = {
+  hours: object.isRequired
 };
 
 export default BusinessHours;

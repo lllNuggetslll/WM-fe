@@ -1,4 +1,5 @@
 import React from "react";
+import { string, number, shape } from "prop-types";
 import styled from "styled-components";
 import { StarRating } from "./../star_rating";
 
@@ -27,6 +28,15 @@ const CardDetails = ({ listing }) => {
       <StarRating rating={listing.rating} />
     </CardInfoWrapper>
   );
+};
+
+CardDetails.propTypes = {
+  listing: shape({
+    city: string.isRequired,
+    distance: number.isRequired,
+    name: string.isRequired,
+    rating: number.isRequired
+  }).isRequired
 };
 
 export default CardDetails;

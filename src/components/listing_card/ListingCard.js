@@ -1,4 +1,5 @@
 import React from "react";
+import { object, func } from "prop-types";
 import Avatar from "../avatar";
 import styled from "styled-components";
 import get from "lodash.get";
@@ -33,10 +34,15 @@ const CardWrapper = styled.div`
 `;
 
 const ListingCard = ({ listing, onClick }) => (
-  <CardWrapper onClick={onClick}>
+  <CardWrapper data-testid="CardWrapper" onClick={onClick}>
     <Avatar img={`${get(listing, "avatar_image.small_url")}`} />
     <CardDetails {...{ listing }} />
   </CardWrapper>
 );
+
+ListingCard.propTypes = {
+  listing: object.isRequired,
+  onClick: func.isRequired
+};
 
 export default ListingCard;

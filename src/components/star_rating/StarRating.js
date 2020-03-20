@@ -1,4 +1,5 @@
 import React from "react";
+import { number } from "prop-types";
 import styled from "styled-components";
 import { decideStars, starMap } from "./starRatingUtils";
 
@@ -14,14 +15,18 @@ const StarRating = ({ rating }) => {
 
   return (
     <div>
-      {stars.map(rating => {
+      {stars.map((rating, index) => {
         const { color, icon } = starMap[rating];
 
-        return <i style={{ color }} className={icon} />;
+        return <i key={index + rating} style={{ color }} className={icon} />;
       })}
       <StarContainer>{ratingText}</StarContainer>
     </div>
   );
+};
+
+StarRating.propTypes = {
+  rating: number.isRequired
 };
 
 export default StarRating;

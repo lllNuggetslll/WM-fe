@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardDetails should render 1`] = `
+<styled.div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "opacity": 0.4,
+      }
+    }
+  >
+    city
+     
+    <hr
+      style={
+        Object {
+          "margin": "0 5px",
+        }
+      }
+    />
+     
+    1
+    mi
+  </div>
+  <div
+    style={
+      Object {
+        "fontWeight": "bold",
+        "opacity": 0.6,
+      }
+    }
+  >
+    name
+  </div>
+  <StarRating
+    rating={1}
+  />
+</styled.div>
+`;

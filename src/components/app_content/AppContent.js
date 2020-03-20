@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { object, func } from "prop-types";
 import ListingCards from "./../listing_cards";
 import styled from "styled-components";
 import get from "lodash.get";
@@ -40,7 +41,7 @@ const Content = ({ error, regions, fetchListing }) => {
     if (get(listings, "listings").length) {
       return (
         <div style={{ color: "#7E7979" }} key={label}>
-          <i class={icon} />
+          <i className={icon} />
           <strong> {label} </strong>
         </div>
       );
@@ -66,6 +67,16 @@ const Content = ({ error, regions, fetchListing }) => {
       )}
     </AppContent>
   );
+};
+
+Content.defaultProps = {
+  regions: {}
+};
+
+Content.propTypes = {
+  error: object.isRequired,
+  regions: object,
+  fetchListing: func.isRequired
 };
 
 export default Content;

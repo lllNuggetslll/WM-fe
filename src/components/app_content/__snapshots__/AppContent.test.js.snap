@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppContent should render 1`] = `
+<styled.div>
+  <div>
+     
+     
+  </div>
+  <styled.div
+    key="dispensary"
+  >
+    <h2>
+      <div
+        key="Dispensary Storefronts"
+        style={
+          Object {
+            "color": "#7E7979",
+          }
+        }
+      >
+        <i
+          className="fas fa-cannabis"
+        />
+        <strong>
+           
+          Dispensary Storefronts
+           
+        </strong>
+      </div>
+    </h2>
+    <withRouter(ListingCards)
+      fetchListing={[Function]}
+      listings={
+        Array [
+          Object {},
+        ]
+      }
+    />
+  </styled.div>
+  <styled.div
+    key="delivery"
+  >
+    <h2>
+      <div
+        key="Delivery Services"
+        style={
+          Object {
+            "color": "#7E7979",
+          }
+        }
+      >
+        <i
+          className="fas fa-car"
+        />
+        <strong>
+           
+          Delivery Services
+           
+        </strong>
+      </div>
+    </h2>
+    <withRouter(ListingCards)
+      fetchListing={[Function]}
+      listings={
+        Array [
+          Object {},
+        ]
+      }
+    />
+  </styled.div>
+  <styled.div
+    key="doctor"
+  >
+    <h2>
+      <div
+        key="Doctors"
+        style={
+          Object {
+            "color": "#7E7979",
+          }
+        }
+      >
+        <i
+          className="fas fa-stethoscope"
+        />
+        <strong>
+           
+          Doctors
+           
+        </strong>
+      </div>
+    </h2>
+    <withRouter(ListingCards)
+      fetchListing={[Function]}
+      listings={
+        Array [
+          Object {},
+        ]
+      }
+    />
+  </styled.div>
+</styled.div>
+`;

@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { string } from "prop-types";
 import styled from "styled-components";
 
 const ImgWrapper = styled.div`
@@ -27,9 +27,9 @@ const Avatar = ({ img, width, height }) => (
 );
 
 Avatar.propTypes = {
-  img: PropTypes.string,
-  width: PropTypes.string,
-  height: PropTypes.string
+  img: string,
+  width: string,
+  height: string
 };
 
 Avatar.defaultProps = {

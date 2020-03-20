@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should not render 1`] = `
+<Modal
+  ariaHideApp={true}
+  bodyOpenClassName="ReactModal__Body--open"
+  closeTimeoutMS={0}
+  contentLabel="Example Modal"
+  isOpen={null}
+  onAfterOpen={[Function]}
+  onRequestClose={[Function]}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  role="dialog"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+  style={
+    Object {
+      "maxWidth": 700,
+    }
+  }
+>
+  <Loader
+    isLoaded={true}
+  />
+</Modal>
+`;
+
+exports[`Modal should render 1`] = `
+<Modal
+  ariaHideApp={true}
+  bodyOpenClassName="ReactModal__Body--open"
+  closeTimeoutMS={0}
+  contentLabel="Example Modal"
+  isOpen={Object {}}
+  onAfterOpen={[Function]}
+  onRequestClose={[Function]}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  role="dialog"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+  style={
+    Object {
+      "maxWidth": 700,
+    }
+  }
+>
+  <Loader
+    isLoaded={true}
+  />
+  <ModalHeader
+    listing={Object {}}
+    onCloseModal={[Function]}
+  />
+  <styled.div>
+    <BusinessAddress
+      listing={Object {}}
+    />
+    <BusinessHours />
+  </styled.div>
+  <WeedMap />
+</Modal>
+`;

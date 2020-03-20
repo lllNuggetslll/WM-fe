@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { connect } from "react-redux";
+import { bool, object, func } from "prop-types";
 import Modal from "react-modal";
 import { withRouter } from "react-router";
 import styled from "styled-components";
@@ -25,7 +26,8 @@ const DisplayModal = ({
   isLoadingListing,
   listing,
   history,
-  shutterListingData
+  shutterListingData,
+  deleteParams
 }) => {
   const onCloseModal = () => {
     const url = deleteParams({
@@ -47,19 +49,30 @@ const DisplayModal = ({
       style={{ maxWidth: 700 }}
     >
       <Loader isLoaded={!isLoadingListing} />
-      {!isLoadingListing &&
-        listing && (
-          <Fragment>
-            <ModalHeader {...{ listing, onCloseModal }} />
-            <BusinessDetailsContainer>
-              <BusinessAddress {...{ listing }} />
-              <BusinessHours hours={listing.business_hours} />
-            </BusinessDetailsContainer>
-            <Map latitude={listing.latitude} longitude={listing.longitude} />
-          </Fragment>
-        )}
+      {!isLoadingListing && listing && (
+        <Fragment>
+          <ModalHeader {...{ listing, onCloseModal }} />
+          <BusinessDetailsContainer>
+            <BusinessAddress {...{ listing }} />
+            <BusinessHours hours={listing.business_hours} />
+          </BusinessDetailsContainer>
+          <Map latitude={listing.latitude} longitude={listing.longitude} />
+        </Fragment>
+      )}
     </Modal>
   );
+};
+
+DisplayModal.defaultProps = {
+  deleteParams
+};
+
+DisplayModal.propTypes = {
+  isLoadingListing: bool.isRequired,
+  listing: object.isRequired,
+  history: object.isRequired,
+  shutterListingData: func.isRequired,
+  deleteParams: func.isRequired
 };
 
 const mapStateToProps = state => {
@@ -69,9 +82,8 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  {
-    shutterListingData
-  }
-)(withRouter(DisplayModal));
+export { DisplayModal as Modal };
+
+export default connect(mapStateToProps, {
+  shutterListingData
+})(withRouter(DisplayModal));

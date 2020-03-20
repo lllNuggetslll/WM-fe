@@ -1,4 +1,5 @@
 import React from "react";
+import { object, func } from "prop-types";
 import styled from "styled-components";
 import get from "lodash.get";
 import Avatar from "./../../avatar";
@@ -46,10 +47,19 @@ const ModalHeader = ({ listing, onCloseModal }) => {
         </CardDetailsWrapper>
       </div>
       <TimesContainer>
-        <i class="fas fa-times" onClick={onCloseModal} />
+        <i
+          data-testid="xIcon"
+          className="fas fa-times"
+          onClick={onCloseModal}
+        />
       </TimesContainer>
     </ModalHeaderWrapper>
   );
+};
+
+ModalHeader.propTypes = {
+  listing: object.isRequired,
+  onCloseModal: func.isRequired
 };
 
 export default ModalHeader;

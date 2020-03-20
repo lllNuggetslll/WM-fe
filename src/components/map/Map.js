@@ -1,4 +1,5 @@
 import React from "react";
+import { number } from "prop-types";
 import styled from "styled-components";
 import GoogleMapReact from "google-map-react";
 
@@ -18,10 +19,15 @@ const WeedMap = ({ latitude, longitude }) => {
         defaultCenter={{ lat: latitude, lng: longitude }}
         defaultZoom={15}
       >
-        <i class={"fas fa-cannabis"} lat={latitude} lng={longitude} />
+        <i className={"fas fa-cannabis"} lat={latitude} lng={longitude} />
       </GoogleMapReact>
     </MapContainer>
   );
+};
+
+WeedMap.propTypes = {
+  latitude: number.isRequired,
+  longitude: number.isRequired
 };
 
 export default WeedMap;
